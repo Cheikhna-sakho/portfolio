@@ -1,0 +1,176 @@
+.wrapper {
+  display: grid;
+  gap: 18px;
+}
+
+.globe {
+  position: relative;
+  aspect-ratio: 1;
+  width: 100%;
+}
+
+.fallback,
+.canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1.2s ease;
+}
+
+.canvas {
+  opacity: 0;
+  /* Soft edge, so a zoomed-in globe fades out instead of being cut by the canvas. */
+  mask-image: radial-gradient(closest-side, #000 90%, transparent 100%);
+}
+
+.globe[data-ready="true"] .canvas {
+  opacity: 1;
+  cursor: grab;
+  touch-action: none;
+}
+
+.canvas[data-dragging="true"] {
+  cursor: grabbing;
+}
+
+.globe[data-ready="true"] .fallback {
+  opacity: 0;
+}
+
+.labels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.city {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -24px 0 0 10px;
+  padding: 1px 6px;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--paper) 80%, transparent);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.city[data-visible="true"] {
+  opacity: 1;
+}
+
+/* Mobile: the globe is a quiet backdrop, the legend would only add noise. */
+.legend {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .legend {
+    display: grid;
+    gap: 10px;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  padding-bottom: 6px;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 12px;
+  font: inherit;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.tab span {
+  color: var(--signal-text);
+}
+
+.tab:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.tab[aria-pressed="true"] {
+  color: var(--paper);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.tab[aria-pressed="true"] span {
+  color: var(--signal);
+}
+
+/* Thin progress line showing when the next route comes up. */
+.timer {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  height: 1px;
+  background: var(--signal);
+  transform-origin: left;
+  animation: timer linear both;
+}
+
+@keyframes timer {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+.caption {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.captionLink {
+  text-decoration: none;
+}
+
+.captionLink strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.captionLink:hover {
+  color: var(--ink);
+}
+
+.captionLink span {
+  display: inline-block;
+  color: var(--signal-text);
+  transition: transform 0.2s ease;
+}
+
+.captionLink:hover span {
+  transform: translateX(4px);
+}

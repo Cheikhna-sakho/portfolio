@@ -1,0 +1,89 @@
+{
+  "slug": "gpconnect",
+  "order": 2,
+  "featured": true,
+  "context": "personal",
+  "year": "2025 – 2026",
+  "title": "GPConnect",
+  "tagline": {
+    "fr": "Une marketplace de colis France ↔ Afrique de l'Ouest, où la confiance est garantie par le code.",
+    "en": "A France ↔ West Africa parcel marketplace where trust is enforced by code."
+  },
+  "problem": {
+    "fr": "Entre la France et l'Afrique de l'Ouest, des voyageurs (les « GP ») revendent les kilos libres de leurs bagages. Ce marché informel repose sur des groupes WhatsApp : pas d'identité vérifiée, pas de preuve de remise, aucun recours en cas de litige.",
+    "en": "Between France and West Africa, travellers (\"GPs\") sell the spare kilos in their luggage. This informal market runs on WhatsApp groups: no verified identity, no proof of handover, no recourse when things go wrong."
+  },
+  "solution": {
+    "fr": "Une PWA Next.js et une API NestJS qui ajoutent la confiance à chaque étape : vérification d'identité (OTP, SMS, KYC Stripe Identity), négociation dans le chat en temps réel, codes OTP comme preuve de remise et de livraison, notation mutuelle et litiges arbitrés par un admin. Chaque service externe est derrière un port, avec un adapter par fournisseur.",
+    "en": "A Next.js PWA and a NestJS API that add trust at every step: identity checks (OTP, SMS, Stripe Identity KYC), negotiation in real-time chat, OTP codes as proof of handover and delivery, mutual ratings and admin-arbitrated disputes. Every external service sits behind a port, with one adapter per provider."
+  },
+  "role": {
+    "fr": "Seul de bout en bout : produit, architecture, front, back, tests, CI/CD et déploiement. C'est mon projet de fin d'études à l'ETNA.",
+    "en": "Solo, end to end: product, architecture, front, back, tests, CI/CD and deployment. It's my final-year project at ETNA."
+  },
+  "highlights": [
+    {
+      "fr": "Recherche d'annonces par rayon avec PostgreSQL 16 et PostGIS ; 27 modèles Prisma.",
+      "en": "Radius search on listings with PostgreSQL 16 and PostGIS; 27 Prisma models."
+    },
+    {
+      "fr": "Auth sans mot de passe : OTP, OAuth Google/Apple/Facebook, JWT RS256 en cookies httpOnly et guard CSRF global.",
+      "en": "Passwordless auth: OTP, Google/Apple/Facebook OAuth, RS256 JWT in httpOnly cookies and a global CSRF guard."
+    },
+    {
+      "fr": "Un parcours Playwright joue l'expéditeur et le transporteur dans deux navigateurs ; toute erreur 5xx fait échouer le test.",
+      "en": "A Playwright journey plays the shipper and the carrier in two browsers; any 5xx error fails the test."
+    },
+    {
+      "fr": "La CI lance les tests sur un PostGIS éphémère et un hook pre-commit refuse le code mort et la duplication.",
+      "en": "CI runs the tests against an ephemeral PostGIS, and a pre-commit hook rejects dead code and duplication."
+    }
+  ],
+  "metrics": [
+    {
+      "value": "270",
+      "label": {
+        "fr": "tests unitaires",
+        "en": "unit tests"
+      }
+    },
+    {
+      "value": "73",
+      "label": {
+        "fr": "tests e2e API",
+        "en": "API e2e tests"
+      }
+    },
+    {
+      "value": "22",
+      "label": {
+        "fr": "parcours Playwright",
+        "en": "Playwright journeys"
+      }
+    },
+    {
+      "value": "~36k",
+      "label": {
+        "fr": "lignes de TypeScript",
+        "en": "lines of TypeScript"
+      }
+    }
+  ],
+  "stack": [
+    "Next.js 14",
+    "NestJS 10",
+    "PostgreSQL",
+    "PostGIS",
+    "Prisma",
+    "Socket.io",
+    "Stripe Identity",
+    "Playwright",
+    "Docker",
+    "GitHub Actions"
+  ],
+  "links": {
+    "demo": "https://gp-connect-gamma.vercel.app",
+    "code": "https://github.com/Cheikhna-sakho/gp-connect-server",
+    "codeSecondary": "https://github.com/Cheikhna-sakho/gp-connect"
+  }
+}

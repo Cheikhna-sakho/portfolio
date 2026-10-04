@@ -1,0 +1,22 @@
+/* Dimmed words stay at 0.45 opacity: still ≥ 3:1 contrast for this large text. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .statement {
+      view-timeline: --statement block;
+    }
+    .statement span {
+      animation: light linear both;
+      animation-timeline: --statement;
+      animation-range: cover calc(18% + var(--p) * 38%) cover calc(22% + var(--p) * 38%);
+    }
+  }
+}
+
+@keyframes light {
+  from {
+    opacity: 0.45;
+  }
+  to {
+    opacity: 1;
+  }
+}

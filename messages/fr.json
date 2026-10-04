@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Cheikhna Sakho · Développeur full-stack",
+    "description": "Développeur full-stack orienté backend (TypeScript, NestJS, React, PostgreSQL). Plus de 3 ans en alternance sur un SaaS B2B d'éco-conception. Disponible en octobre 2026."
+  },
+  "nav": {
+    "skip": "Aller au contenu",
+    "journey": "Parcours",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "about": "À propos",
+    "contact": "Contact",
+    "language": "Langue",
+    "switchTo": "English version",
+    "open": "Ouvrir le menu",
+    "close": "Fermer le menu"
+  },
+  "hero": {
+    "trackingLabel": "N° de suivi",
+    "statusLabel": "Statut",
+    "cta": "Me contacter",
+    "cv": "Télécharger le CV",
+    "projects": "Voir les projets",
+    "globe": "Globe montrant mes itinéraires : Paris, mon point de départ, et mes prochaines destinations en Europe",
+    "routes": "Itinéraires"
+  },
+  "journey": {
+    "kicker": "Suivi de l'envoi",
+    "title": "Parcours",
+    "intro": "Du premier colis livré à la production : chaque étape de mon trajet."
+  },
+  "projects": {
+    "kicker": "Colis livrés",
+    "title": "Projets sélectionnés",
+    "intro": "Des problèmes réels, des solutions en production et des chiffres mesurés.",
+    "others": "Autres envois",
+    "problem": "Problème",
+    "solution": "Solution",
+    "role": "Mon rôle",
+    "highlights": "Points techniques",
+    "stack": "Stack",
+    "metrics": "Mesures",
+    "details": "Lire l'étude de cas",
+    "demo": "Voir la démo",
+    "code": "Code",
+    "codeSecondary": "Code front",
+    "back": "Tous les projets",
+    "context": {
+      "pro": "Pro",
+      "personal": "Perso",
+      "school": "École"
+    },
+    "next": "Projet suivant"
+  },
+  "skills": {
+    "kicker": "Contenu du colis",
+    "title": "Compétences"
+  },
+  "about": {
+    "kicker": "Expéditeur",
+    "title": "À propos"
+  },
+  "contact": {
+    "kicker": "Confirmer la réception",
+    "title": "Travaillons ensemble",
+    "intro": "Je cherche un premier CDI à partir d'octobre 2026. Écrivez-moi.",
+    "email": "Écrire un e-mail",
+    "copy": "Copier l'adresse",
+    "copied": "Adresse copiée",
+    "cv": "CV (PDF)",
+    "phone": "Téléphone",
+    "marquee": "Disponible en octobre 2026"
+  },
+  "footer": {
+    "built": "Conçu et développé par Cheikhna Sakho avec Next.js.",
+    "source": "Code source"
+  },
+  "notFound": {
+    "title": "Colis introuvable",
+    "body": "Cette page n'existe pas ou a été déplacée.",
+    "home": "Retour à l'accueil"
+  }
+}

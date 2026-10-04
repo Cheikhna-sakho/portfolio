@@ -1,0 +1,22 @@
+[
+  {
+    "group": { "fr": "Backend et données", "en": "Backend & data" },
+    "items": ["TypeScript", "Node.js", "NestJS", "Express", "PostgreSQL", "PostGIS", "Prisma", "REST / OpenAPI", "Socket.io"]
+  },
+  {
+    "group": { "fr": "Front-end", "en": "Front-end" },
+    "items": ["React", "Next.js", "SSR", "react-query", "zod", "SCSS / CSS Modules", "PWA"]
+  },
+  {
+    "group": { "fr": "Qualité et performance", "en": "Quality & performance" },
+    "items": ["Jest", "Vitest", "Playwright", "Tests e2e", "JMeter", "Non-régression", "Revue de code"]
+  },
+  {
+    "group": { "fr": "Infra et outillage", "en": "Infra & tooling" },
+    "items": ["Docker", "GitHub Actions", "Azure", "Nx monorepo", "Ansible-like IaC", "Git", "Claude Code"]
+  },
+  {
+    "group": { "fr": "Aussi pratiqué", "en": "Also used" },
+    "items": ["Python", "Flutter", "React Native", "MongoDB", "MySQL", "Haskell"]
+  }
+]

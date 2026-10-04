@@ -1,0 +1,90 @@
+[
+  {
+    "id": "pickup",
+    "status": { "fr": "Pris en charge", "en": "Picked up" },
+    "period": "2020 – 2022",
+    "kind": "work",
+    "title": { "fr": "Coursier, puis premiers pas dans le web", "en": "Courier, then first steps in web" },
+    "org": "Just Eat Takeaway.com · Team Tonic Services",
+    "place": "Paris",
+    "summary": {
+      "fr": "Bac scientifique en candidat libre (2020), puis coursier en parallèle de mes débuts en développement. Stage d'intégrateur et rédacteur web en 2021.",
+      "en": "Science baccalaureate as an independent candidate (2020), then courier work alongside my first steps in development. Web integrator and copywriter internship in 2021."
+    },
+    "points": []
+  },
+  {
+    "id": "transit",
+    "status": { "fr": "En transit", "en": "In transit" },
+    "period": "2021 – 2023",
+    "kind": "education",
+    "title": { "fr": "Web@cadémie by Epitech (bac+2)", "en": "Web@cadémie by Epitech (2-year degree)" },
+    "org": "Epitech",
+    "place": "Paris",
+    "summary": {
+      "fr": "Formation intensive par projets : PHP/Symfony, JavaScript/React, Node.js, SQL et NoSQL, en groupes agiles.",
+      "en": "Intensive project-based programme: PHP/Symfony, JavaScript/React, Node.js, SQL and NoSQL, in agile teams."
+    },
+    "points": []
+  },
+  {
+    "id": "holis",
+    "status": { "fr": "En production", "en": "In production" },
+    "period": { "fr": "Janv. 2023 – aujourd'hui", "en": "Jan 2023 – present" },
+    "kind": "work",
+    "title": { "fr": "Développeur full-stack (alternance)", "en": "Full-stack developer (apprenticeship)" },
+    "org": "Holis",
+    "place": "Paris",
+    "summary": {
+      "fr": "SaaS B2B d'analyse de cycle de vie et d'éco-conception. Arrivé 4ᵉ salarié ; l'entreprise compte aujourd'hui environ 20 personnes, dont une équipe tech de 7.",
+      "en": "B2B SaaS for life-cycle assessment and eco-design. Joined as the 4th employee; the company now has about 20 people, including a tech team of 7."
+    },
+    "points": [
+      {
+        "fr": "J'ai proposé et mené un refactoring de plus de 30 000 lignes, puis les migrations vers TypeScript, NestJS et un monorepo Nx (environ 250 000 lignes aujourd'hui).",
+        "en": "Proposed and led a 30,000+ line refactoring, then the migrations to TypeScript, NestJS and an Nx monorepo (about 250k lines today)."
+      },
+      {
+        "fr": "J'ai porté le widget Ecopassport de bout en bout : serveur multi-tenant, React SSR, script client de 16 Ko, CI et déploiement Azure.",
+        "en": "Owned the Ecopassport widget end to end: multi-tenant server, React SSR, 16 KB client script, CI and Azure deployment."
+      },
+      {
+        "fr": "Je fais passer un test de charge JMeter à chaque release, avec métriques transmises aux clients (dernière campagne : 0 erreur, p95 à 1,29 s).",
+        "en": "Load-tested every release with JMeter and shared the metrics with clients (latest run: 0 errors, p95 1.29 s)."
+      },
+      {
+        "fr": "J'ai construit le générateur de rapports ACV bilingue et la suite de non-régression du moteur de calcul.",
+        "en": "Built the bilingual LCA report generator and the calculation engine's non-regression suite."
+      }
+    ],
+    "current": true
+  },
+  {
+    "id": "etna",
+    "status": { "fr": "Contrôle qualité", "en": "Quality check" },
+    "period": "2023 – 2026",
+    "kind": "education",
+    "title": { "fr": "Concepteur développeur d'applications (bac+3), puis Architecte de SI (bac+5)", "en": "Application Designer-Developer (bachelor level), then Information Systems Architect (master level)" },
+    "org": "ETNA",
+    "place": "Ivry-sur-Seine",
+    "summary": {
+      "fr": "Master en alternance : architecture des SI, backend et bases de données, infrastructure as code. Mémoire sur la restitution des données d'ACV à des publics hétérogènes, sans compromettre la conformité ni la maintenabilité.",
+      "en": "Work-study master's: information-system architecture, backend and databases, infrastructure as code. Thesis on delivering life-cycle-assessment data to very different audiences without compromising compliance or maintainability."
+    },
+    "points": []
+  },
+  {
+    "id": "next",
+    "status": { "fr": "En cours de livraison", "en": "Out for delivery" },
+    "period": { "fr": "Octobre 2026", "en": "October 2026" },
+    "kind": "milestone",
+    "title": { "fr": "Prochaine étape : votre équipe", "en": "Next stop: your team" },
+    "org": null,
+    "place": null,
+    "summary": {
+      "fr": "Disponible pour un premier CDI, en France ou à l'étranger. Backend, architecture, données et performance de préférence.",
+      "en": "Available for a first permanent role, in France or abroad. Backend, architecture, data and performance preferred."
+    },
+    "points": []
+  }
+]

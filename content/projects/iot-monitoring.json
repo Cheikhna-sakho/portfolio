@@ -1,0 +1,28 @@
+{
+  "slug": "iot-monitoring",
+  "order": 4,
+  "featured": false,
+  "context": "personal",
+  "year": "2026",
+  "title": "IoT Monitoring",
+  "tagline": {
+    "fr": "La surveillance d'un élevage avicole, du capteur jusqu'au dashboard en temps réel.",
+    "en": "Poultry-farm monitoring, from sensor to real-time dashboard."
+  },
+  "problem": {
+    "fr": "Un éleveur doit être alerté tout de suite en cas de chaleur ou de manque d'eau, et pouvoir agir à distance sur la ventilation.",
+    "en": "A farmer needs instant alerts on heat or low water, and a way to control ventilation remotely."
+  },
+  "solution": {
+    "fr": "Un firmware ESP32 publie ses mesures en MQTT. Une API NestJS les valide strictement (le broker est public), déclenche les alertes et renvoie les commandes. Un dashboard Next.js affiche le tout en direct via Socket.io.",
+    "en": "ESP32 firmware publishes readings over MQTT. A NestJS API validates them strictly (the broker is public), raises alerts and sends commands back. A Next.js dashboard shows everything live through Socket.io."
+  },
+  "role": { "fr": "Projet personnel, réalisé seul.", "en": "Personal project, built alone." },
+  "highlights": [
+    { "fr": "J'ai refactoré un sketch Arduino monolithique en couches : config, drivers, services et transport.", "en": "Refactored a monolithic Arduino sketch into layers: config, drivers, services and transport." },
+    { "fr": "Toute la chaîne démarre avec un seul docker-compose : client, API, PostgreSQL et Mosquitto.", "en": "The whole chain starts with one docker-compose: client, API, PostgreSQL and Mosquitto." }
+  ],
+  "metrics": [],
+  "stack": ["ESP32 / C++", "MQTT", "NestJS", "Prisma", "PostgreSQL", "Socket.io", "Next.js", "Recharts", "Docker"],
+  "links": {}
+}

@@ -1,0 +1,171 @@
+.section {
+  padding-block: 88px;
+  background: var(--paper-2);
+  border-block: 1px solid var(--line);
+}
+
+.featured {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+}
+
+.card,
+.other {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  padding: 24px 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.card:hover,
+.other:hover {
+  border-color: var(--ink);
+}
+
+.other:hover {
+  transform: translateY(-4px);
+}
+
+.card:has(.cardLink:focus-visible),
+.other:has(.cardLink:focus-visible) {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.cardMain,
+.cardSide {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.cardMeta {
+  display: flex;
+  gap: 14px;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.cardTitle {
+  font-size: clamp(2rem, 5.5vw, 3.4rem);
+  letter-spacing: -0.035em;
+}
+
+/* The title link covers the whole card, so the card is one tab stop. */
+.cardLink {
+  text-decoration: none;
+}
+
+.cardLink::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.cardLink:focus-visible {
+  outline: none;
+}
+
+.tagline {
+  font-size: 1.12rem;
+  font-weight: 500;
+}
+
+.problem {
+  color: var(--muted);
+  max-width: 62ch;
+}
+
+.problem strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: var(--signal-text);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.card:hover .arrow {
+  transform: translateX(6px);
+}
+
+.othersTitle {
+  margin: 72px 0 20px;
+  font-size: 1.5rem;
+}
+
+.others {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+
+.other h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+}
+
+.other p {
+  color: var(--muted);
+}
+
+@media (min-width: 720px) {
+  .card {
+    padding: 36px;
+  }
+  .others {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*
+ * Desktop: featured projects stack like parcels. Each card sticks a little
+ * lower than the previous one and the next card slides over it.
+ */
+@media (min-width: 1000px) and (min-height: 700px) {
+  .featured {
+    gap: 0;
+  }
+  .card {
+    position: sticky;
+    top: calc(92px + var(--stack) * 20px);
+    grid-template-columns: 1.25fr 1fr;
+    gap: 48px;
+    min-height: min(560px, calc(100svh - 180px));
+    align-content: center;
+    margin-bottom: 18vh;
+    box-shadow: 0 -18px 50px -30px color-mix(in srgb, var(--ink) 45%, transparent);
+  }
+  .card:last-child {
+    margin-bottom: 0;
+  }
+  .cardSide {
+    align-content: center;
+  }
+}
+
+.titleText {
+  display: inline-block;
+}

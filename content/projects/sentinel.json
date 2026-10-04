@@ -1,0 +1,25 @@
+{
+  "slug": "sentinel",
+  "order": 5,
+  "featured": false,
+  "context": "school",
+  "year": "2025 – 2026",
+  "title": "Sentinel F-XVIII",
+  "tagline": {
+    "fr": "Un robot terrestre piloté depuis le navigateur, avec GPS, LIDAR et vision par ordinateur.",
+    "en": "A ground robot driven from the browser, with GPS, LIDAR and computer vision."
+  },
+  "problem": {
+    "fr": "Piloter un robot à distance suppose de voir ce qu'il voit, de savoir où il est et de le contrôler sans latence gênante.",
+    "en": "Driving a robot remotely means seeing what it sees, knowing where it is and controlling it without noticeable lag."
+  },
+  "solution": {
+    "fr": "Une interface Next.js avec joystick, carte Leaflet et routage. Derrière, une API FastAPI qui traite le flux caméra avec OpenCV et MediaPipe (contours, visages, QR codes) et dialogue avec le firmware ESP32.",
+    "en": "A Next.js interface with a joystick, Leaflet map and routing. Behind it, a FastAPI service processes the camera stream with OpenCV and MediaPipe (edges, faces, QR codes) and talks to the ESP32 firmware."
+  },
+  "role": { "fr": "Projet en binôme : interface web, API et intégration.", "en": "Two-person project: web interface, API and integration." },
+  "highlights": [],
+  "metrics": [],
+  "stack": ["Next.js 15", "FastAPI", "OpenCV", "MediaPipe", "Leaflet", "ESP32"],
+  "links": {}
+}

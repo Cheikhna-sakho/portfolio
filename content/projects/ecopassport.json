@@ -1,0 +1,42 @@
+{
+  "slug": "ecopassport",
+  "order": 1,
+  "featured": true,
+  "context": "pro",
+  "year": "2023 – 2026",
+  "title": "Ecopassport",
+  "tagline": {
+    "fr": "Un widget d'étiquetage environnemental intégré sur de grands sites e-commerce.",
+    "en": "An environmental-labelling widget embedded on major e-commerce sites."
+  },
+  "problem": {
+    "fr": "La loi AGEC impose d'afficher des informations environnementales sur les produits. Chez Holis, il fallait les montrer directement sur les fiches produit de clients e-commerce : un code tiers, injecté dans des pages que nous ne contrôlons pas, qui ne doit ni ralentir ni casser le site hôte, pour 17 catégories de produits différentes.",
+    "en": "France's AGEC law requires environmental information on products. At Holis, it had to appear directly on e-commerce clients' product pages: third-party code, injected into pages we don't control, that must neither slow down nor break the host site, across 17 product categories."
+  },
+  "solution": {
+    "fr": "Un serveur multi-tenant Node/Express en TypeScript, avec PostgreSQL et Prisma, qui rend le widget en React SSR. Côté client, un script d'environ 16 Ko sans aucune dépendance l'injecte. J'ai préféré une optimisation côté client à un cache Redis : un composant qu'on ne construit pas est un composant qu'on n'a pas à maintenir.",
+    "en": "A multi-tenant Node/Express TypeScript server, with PostgreSQL and Prisma, rendering the widget with React SSR. On the client, a ~16 KB dependency-free script injects it. I chose a client-side optimisation over a Redis cache: a component you don't build is a component you don't have to maintain."
+  },
+  "role": {
+    "fr": "Responsable de bout en bout, de la conception à la production, avec environ 60 % des commits. Je valide chaque release par un test de charge et je transmets les métriques aux clients.",
+    "en": "End-to-end owner from design to production, with about 60% of the commits. I validate every release with a load test and share the metrics with clients."
+  },
+  "highlights": [
+    { "fr": "Environ 14 modules métier pour couvrir 17 catégories de produits.", "en": "About 14 business modules covering 17 product categories." },
+    { "fr": "CI GitHub Actions et déploiement sur Azure App Service.", "en": "GitHub Actions CI and deployment on Azure App Service." },
+    { "fr": "Campagne JMeter avant chaque release, avec 100 utilisateurs virtuels.", "en": "JMeter campaign before every release, with 100 virtual users." },
+    { "fr": "En production chez de grands e-commerçants (noms sous NDA).", "en": "Live at major e-commerce retailers (names under NDA)." }
+  ],
+  "metrics": [
+    { "value": "52 509", "label": { "fr": "requêtes lors du dernier test", "en": "requests in the latest test" } },
+    { "value": "0", "label": { "fr": "erreur", "en": "errors" } },
+    { "value": "1,29 s", "label": { "fr": "latence p95", "en": "p95 latency" } },
+    { "value": "~16 Ko", "label": { "fr": "script client, sans dépendance", "en": "client script, zero dependencies" } }
+  ],
+  "stack": ["TypeScript", "Node.js", "Express", "React SSR", "PostgreSQL", "Prisma", "Azure", "GitHub Actions", "JMeter"],
+  "links": {
+    "demo": null,
+    "code": null,
+    "note": { "fr": "Code propriétaire (Holis). Détails techniques disponibles en entretien.", "en": "Proprietary code (Holis). Technical details happy to discuss in interview." }
+  }
+}

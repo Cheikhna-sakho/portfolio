@@ -1,0 +1,29 @@
+{
+  "slug": "budget-app",
+  "order": 6,
+  "featured": false,
+  "context": "school",
+  "year": "2024",
+  "title": "Budget App",
+  "tagline": {
+    "fr": "Une application mobile de budget personnel, avec son API NestJS.",
+    "en": "A personal-budget mobile app with its NestJS API."
+  },
+  "problem": {
+    "fr": "Suivre ses dépenses, y compris les dépenses récurrentes, et les rattacher à des objectifs d'épargne.",
+    "en": "Track spending, including recurring expenses, and tie it to savings goals."
+  },
+  "solution": {
+    "fr": "Une API NestJS + Prisma (transactions, catégories, objectifs, occurrences récurrentes) consommée par une app Flutter.",
+    "en": "A NestJS + Prisma API (transactions, categories, goals, recurring occurrences) consumed by a Flutter app."
+  },
+  "role": { "fr": "Équipe de 3 ; principal contributeur de l'API.", "en": "Team of 3; main contributor to the API." },
+  "highlights": [
+    { "fr": "Tests unitaires avec jest-mock-extended, Docker de production et hooks Husky.", "en": "Unit tests with jest-mock-extended, a production Dockerfile and Husky hooks." }
+  ],
+  "metrics": [],
+  "stack": ["NestJS", "Prisma", "PostgreSQL", "Flutter", "Docker"],
+  "links": {
+    "code": "https://github.com/Cheikhna-sakho/projet_fin_dannee"
+  }
+}

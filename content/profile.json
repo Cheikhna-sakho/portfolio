@@ -1,0 +1,79 @@
+{
+  "name": "Cheikhna Sakho",
+  "role": {
+    "fr": "Développeur full-stack · orienté backend",
+    "en": "Full-stack developer · backend-leaning"
+  },
+  "location": {
+    "fr": "Paris · remote, hybride ou mobilité",
+    "en": "Paris · remote, hybrid or relocation"
+  },
+  "email": "cheikh.bsakho@gmail.com",
+  "phone": "+33 7 68 63 44 49",
+  "showPhone": false,
+  "links": {
+    "github": "https://github.com/Cheikhna-sakho",
+    "linkedin": "https://www.linkedin.com/in/cheikhna-sakho"
+  },
+  "tracking": "CS-2021-2610",
+  "availability": {
+    "date": "2026-10",
+    "label": {
+      "fr": "En cours de livraison",
+      "en": "Out for delivery"
+    },
+    "detail": {
+      "fr": "Disponible en octobre 2026 pour un CDI",
+      "en": "Available from October 2026, full-time"
+    }
+  },
+  "headline": {
+    "fr": "Je conçois et je livre des logiciels qui tiennent la charge.",
+    "en": "I design and ship software that holds up under load."
+  },
+  "intro": {
+    "fr": "Développeur full-stack en TypeScript, NestJS, React et PostgreSQL. Depuis plus de 3 ans en alternance sur un SaaS B2B d'éco-conception, je porte des fonctionnalités de la conception jusqu'aux tests de charge en production.",
+    "en": "Full-stack developer working in TypeScript, NestJS, React and PostgreSQL. For 3+ years as an apprentice on a B2B eco-design SaaS, I've taken features from design all the way to load tests in production."
+  },
+  "heroMetrics": [
+    {
+      "value": "52 509",
+      "label": {
+        "fr": "requêtes, 0 erreur, lors du dernier test de charge",
+        "en": "requests, 0 errors, in the latest load test"
+      }
+    },
+    {
+      "value": "30 000+",
+      "label": {
+        "fr": "lignes refactorées, à mon initiative",
+        "en": "lines refactored, on my own initiative"
+      }
+    },
+    {
+      "value": "343",
+      "label": {
+        "fr": "tests unitaires et e2e sur GPConnect, mon projet solo",
+        "en": "unit and e2e tests on GPConnect, my solo project"
+      }
+    }
+  ],
+  "about": [
+    {
+      "fr": "Avant d'écrire du code, j'ai livré des repas dans Paris. J'en ai gardé une idée simple : une livraison n'est réussie que si elle arrive, à l'heure et intacte. C'est ce que je cherche dans le logiciel.",
+      "en": "Before writing code, I delivered food across Paris. It left me with one simple idea: a delivery only counts if it arrives, on time and intact. That's what I aim for in software."
+    },
+    {
+      "fr": "Pour moi, l'ingénierie, c'est proportionner : une protection à la mesure de la criticité, un effort à la mesure de ce qu'on a mesuré. J'écris le filet de sécurité avant de toucher au code critique, et je sais renoncer à un composant qui ne vaut pas sa maintenance.",
+      "en": "To me, engineering is about proportion: protection that matches criticality, effort that matches what was measured. I write the safety net before touching critical code, and I'm willing to drop a component that isn't worth maintaining."
+    },
+    {
+      "fr": "Je progresse le mieux dans une petite équipe produit exigeante, avec de la revue de code, des objectifs mesurables et des post-mortems honnêtes.",
+      "en": "I grow best in a small, demanding product team with code review, measurable goals and honest post-mortems."
+    }
+  ],
+  "cv": {
+    "fr": "/cv/cheikhna-sakho-cv-fr.pdf",
+    "en": "/cv/cheikhna-sakho-cv-en.pdf"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Cheikhna Sakho · Full-stack developer",
+    "description": "Backend-leaning full-stack developer (TypeScript, NestJS, React, PostgreSQL). 3+ years as an apprentice on a B2B eco-design SaaS. Available October 2026."
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "journey": "Journey",
+    "projects": "Projects",
+    "skills": "Skills",
+    "about": "About",
+    "contact": "Contact",
+    "language": "Language",
+    "switchTo": "Version française",
+    "open": "Open menu",
+    "close": "Close menu"
+  },
+  "hero": {
+    "trackingLabel": "Tracking no.",
+    "statusLabel": "Status",
+    "cta": "Get in touch",
+    "cv": "Download CV",
+    "projects": "See projects",
+    "globe": "Globe showing my routes: Paris, my home base, and my next destinations in Europe",
+    "routes": "Routes"
+  },
+  "journey": {
+    "kicker": "Shipment tracking",
+    "title": "Journey",
+    "intro": "From my first delivered parcel to production: every stop along the way."
+  },
+  "projects": {
+    "kicker": "Delivered",
+    "title": "Selected projects",
+    "intro": "Real problems, solutions in production and measured numbers.",
+    "others": "Other shipments",
+    "problem": "Problem",
+    "solution": "Solution",
+    "role": "My role",
+    "highlights": "Technical highlights",
+    "stack": "Stack",
+    "metrics": "Measured",
+    "details": "Read the case study",
+    "demo": "Live demo",
+    "code": "Code",
+    "codeSecondary": "Front-end code",
+    "back": "All projects",
+    "context": {
+      "pro": "Work",
+      "personal": "Personal",
+      "school": "School"
+    },
+    "next": "Next project"
+  },
+  "skills": {
+    "kicker": "Package contents",
+    "title": "Skills"
+  },
+  "about": {
+    "kicker": "Sender",
+    "title": "About"
+  },
+  "contact": {
+    "kicker": "Confirm receipt",
+    "title": "Let's work together",
+    "intro": "I'm looking for a first full-time role starting October 2026. Drop me a line.",
+    "email": "Send an email",
+    "copy": "Copy address",
+    "copied": "Address copied",
+    "cv": "CV (PDF)",
+    "phone": "Phone",
+    "marquee": "Available October 2026"
+  },
+  "footer": {
+    "built": "Designed and built by Cheikhna Sakho with Next.js.",
+    "source": "Source code"
+  },
+  "notFound": {
+    "title": "Parcel not found",
+    "body": "This page doesn't exist or has moved.",
+    "home": "Back to home"
+  }
+}

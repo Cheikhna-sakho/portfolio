@@ -1,0 +1,74 @@
+{
+  "cities": {
+    "PAR": {
+      "name": "Paris",
+      "lat": 48.86,
+      "lon": 2.35
+    },
+    "BER": {
+      "name": "Berlin",
+      "lat": 52.52,
+      "lon": 13.4
+    },
+    "LIS": {
+      "name": "Lisboa",
+      "lat": 38.72,
+      "lon": -9.14
+    },
+    "DUB": {
+      "name": "Dublin",
+      "lat": 53.35,
+      "lon": -6.26
+    },
+    "ARN": {
+      "name": "Stockholm",
+      "lat": 59.33,
+      "lon": 18.07
+    }
+  },
+  "routes": [
+    {
+      "id": "base",
+      "label": {
+        "fr": "Point de départ",
+        "en": "Home base"
+      },
+      "detail": {
+        "fr": "Paris · Holis, ETNA, Epitech",
+        "en": "Paris · Holis, ETNA, Epitech"
+      },
+      "href": "#journey",
+      "center": {
+        "lat": 40,
+        "lon": 2
+      },
+      "arcs": [],
+      "pins": ["PAR"],
+      "zoom": 2.9
+    },
+    {
+      "id": "next",
+      "label": {
+        "fr": "Prochaine destination",
+        "en": "Next destination"
+      },
+      "detail": {
+        "fr": "Paris, remote ou à l'étranger, UE en priorité",
+        "en": "Paris, remote or abroad, EU first"
+      },
+      "href": "#contact",
+      "center": {
+        "lat": 50,
+        "lon": 4
+      },
+      "arcs": [
+        ["PAR", "LIS"],
+        ["PAR", "DUB"],
+        ["PAR", "BER"],
+        ["PAR", "ARN"]
+      ],
+      "pins": ["PAR", "LIS", "DUB", "BER", "ARN"],
+      "zoom": 3.0
+    }
+  ]
+}

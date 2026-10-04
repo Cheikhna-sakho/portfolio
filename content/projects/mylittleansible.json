@@ -1,0 +1,65 @@
+{
+  "slug": "mylittleansible",
+  "order": 3,
+  "featured": true,
+  "context": "school",
+  "year": "2025 – 2026",
+  "title": "MyLittleAnsible",
+  "tagline": {
+    "fr": "Un outil d'infrastructure as code en ligne de commande, inspiré d'Ansible et écrit en Python.",
+    "en": "A command-line infrastructure-as-code tool inspired by Ansible, written in Python."
+  },
+  "problem": {
+    "fr": "Configurer des serveurs à la main n'est ni reproductible ni vérifiable. Le sujet : comprendre ce que fait Ansible en l'écrivant soi-même, c'est-à-dire appliquer une liste de tâches YAML à un inventaire de machines via SSH.",
+    "en": "Configuring servers by hand is neither reproducible nor auditable. The brief: understand what Ansible does by building it yourself, that is, apply a YAML task list to an inventory of machines over SSH."
+  },
+  "solution": {
+    "fr": "Une CLI packagée (`mla -f todos.yml -i inventory.yml`) : 6 modules (apt, command, copy, template Jinja2, service, sysctl), un mode dry-run, un mode debug et trois modes d'authentification SSH. Des labs Docker servent de cibles de test.",
+    "en": "A packaged CLI (`mla -f todos.yml -i inventory.yml`): 6 modules (apt, command, copy, Jinja2 template, service, sysctl), dry-run and debug modes, and three SSH authentication modes. Docker labs serve as test targets."
+  },
+  "role": {
+    "fr": "Développé seul, de la conception au rendu final.",
+    "en": "Built alone, from design to final delivery."
+  },
+  "highlights": [
+    {
+      "fr": "Chaque tâche rapporte un état ok, changed ou fail, avec un bilan par hôte.",
+      "en": "Every task reports an ok, changed or fail state, with a per-host summary."
+    },
+    {
+      "fr": "Le dry-run montre ce qui changerait sans rien toucher.",
+      "en": "Dry-run shows what would change without touching anything."
+    }
+  ],
+  "metrics": [
+    {
+      "value": "6",
+      "label": {
+        "fr": "modules",
+        "en": "modules"
+      }
+    },
+    {
+      "value": "3",
+      "label": {
+        "fr": "modes d'auth SSH",
+        "en": "SSH auth modes"
+      }
+    }
+  ],
+  "stack": [
+    "Python",
+    "paramiko",
+    "PyYAML",
+    "Jinja2",
+    "Docker"
+  ],
+  "links": {
+    "demo": null,
+    "code": null,
+    "note": {
+      "fr": "Code hébergé sur le GitLab de l'école. Sur demande.",
+      "en": "Code hosted on the school's GitLab. Available on request."
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.indicator {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .indicator {
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    z-index: 40;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 6px 12px;
+    align-items: center;
+    padding: 10px 14px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: color-mix(in srgb, var(--card) 85%, transparent);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition:
+      opacity 0.4s ease,
+      transform 0.4s ease;
+  }
+
+  .indicator[data-visible="true"] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.label {
+  color: var(--signal-text);
+  font-weight: 500;
+}
+
+.track {
+  grid-column: 1 / -1;
+  height: 2px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  background: var(--signal);
+  transform-origin: left;
+  transform: scaleX(0);
+}

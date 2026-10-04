@@ -1,0 +1,147 @@
+.section {
+  padding-block: 56px;
+}
+
+.track {
+  position: relative;
+  --rail-x: 7px;
+}
+
+.rail,
+.fill {
+  position: absolute;
+  left: var(--rail-x);
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+}
+
+.rail {
+  background: repeating-linear-gradient(to bottom, var(--line) 0 6px, transparent 6px 12px);
+}
+
+.fill {
+  background: var(--signal);
+  transform-origin: top;
+}
+
+/* The delivery route fills in as the timeline scrolls past (CSS only). */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .fill {
+      animation: route linear both;
+      animation-timeline: view();
+      animation-range: entry 20% exit 60%;
+    }
+  }
+}
+
+@keyframes route {
+  from {
+    transform: scaleY(0);
+  }
+}
+
+.steps {
+  list-style: none;
+  display: grid;
+  gap: 36px;
+}
+
+.step {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  padding-left: 36px;
+}
+
+.node {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+}
+
+.step[data-kind="milestone"] .node {
+  border-color: var(--signal);
+  background: var(--signal);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--signal) 22%, transparent);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  font-size: 0.8rem;
+}
+
+.status {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+.step[data-kind="milestone"] .status {
+  color: var(--signal-text);
+}
+
+.period {
+  color: var(--muted);
+}
+
+.body {
+  display: grid;
+  gap: 6px;
+}
+
+.body h3 {
+  font-size: 1.3rem;
+}
+
+.org {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.summary {
+  max-width: 65ch;
+}
+
+.points {
+  display: grid;
+  gap: 6px;
+  margin-top: 6px;
+  padding-left: 1.1em;
+  max-width: 70ch;
+}
+
+.points li::marker {
+  color: var(--signal);
+}
+
+@media (min-width: 900px) {
+  .section {
+    padding-block: 88px;
+  }
+  .track {
+    --rail-x: 207px;
+  }
+  .step {
+    grid-template-columns: 180px 1fr;
+    gap: 64px;
+    padding-left: 0;
+  }
+  .node {
+    left: 200px;
+  }
+  .meta {
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-top: 2px;
+  }
+}
