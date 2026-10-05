@@ -15,7 +15,15 @@ const text = z.union([z.string(), z.object({ fr: z.string(), en: z.string() })])
 const textList = z.array(text);
 type Text = z.infer<typeof text>;
 
-export const t = (value: Text, locale: Locale) => (typeof value === "string" ? value : value[locale]);
+// French typography: the space before : ; ! ? » and after « must not break,
+// or the punctuation can end up alone at the start of a line.
+const frenchSpacing = (text: string) =>
+  text.replace(/ ([:;!?»])/g, "\u00a0$1").replace(/« /g, "«\u00a0");
+
+export const t = (value: Text, locale: Locale) => {
+  const text = typeof value === "string" ? value : value[locale];
+  return locale === "fr" ? frenchSpacing(text) : text;
+};
 
 const url = z.url().nullable().optional();
 
@@ -23,6 +31,11 @@ const profileSchema = z.object({
   name: z.string(),
   role: text,
   location: text,
+  /** Optional portrait in /public, shown in the About section. */
+  photo: z
+    .object({ src: z.string(), width: z.number(), height: z.number(), alt: text })
+    .nullable()
+    .optional(),
   email: z.email(),
   phone: z.string().nullable(),
   showPhone: z.boolean(),

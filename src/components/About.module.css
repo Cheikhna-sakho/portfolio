@@ -15,12 +15,61 @@
   max-width: 28ch;
 }
 
+.layout {
+  display: grid;
+  gap: 40px;
+}
+
+/* The portrait is pinned to the parcel slip like an ID photo. */
+.photo {
+  justify-self: start;
+  width: min(62vw, 300px);
+  margin: 0;
+  padding: 10px 10px 0;
+  background: var(--paper);
+  border-radius: 4px;
+  box-shadow: 0 24px 50px -24px rgb(0 0 0 / 0.55);
+  rotate: -2.5deg;
+  transition: rotate 0.4s ease;
+}
+
+.photo:hover {
+  rotate: 0deg;
+}
+
+.photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.photo figcaption {
+  padding: 10px 2px 12px;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
 .text {
   display: grid;
   gap: 18px;
   max-width: 62ch;
   margin-top: 48px;
-  margin-left: auto;
   font-size: 1.1rem;
   color: var(--muted);
+}
+
+@media (min-width: 1000px) {
+  .layout {
+    grid-template-columns: 340px 1fr;
+    gap: 72px;
+    align-items: start;
+  }
+  .photo {
+    width: 100%;
+    position: sticky;
+    top: 110px;
+  }
 }

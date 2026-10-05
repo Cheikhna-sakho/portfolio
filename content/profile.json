@@ -8,6 +8,15 @@
     "fr": "Paris · remote, hybride ou mobilité",
     "en": "Paris · remote, hybrid or relocation"
   },
+  "photo": {
+    "src": "/cheikhna-sakho.jpg",
+    "width": 960,
+    "height": 1200,
+    "alt": {
+      "fr": "Portrait de Cheikhna Sakho, souriant",
+      "en": "Portrait of Cheikhna Sakho, smiling"
+    }
+  },
   "email": "cheikh.bsakho@gmail.com",
   "phone": "+33 7 68 63 44 49",
   "showPhone": false,
