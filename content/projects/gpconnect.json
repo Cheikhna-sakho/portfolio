@@ -18,8 +18,8 @@
     "en": "A Next.js PWA and a NestJS API that add trust at every step: identity checks (OTP, SMS, Stripe Identity KYC), negotiation in real-time chat, OTP codes as proof of handover and delivery, mutual ratings and admin-arbitrated disputes. Every external service sits behind a port, with one adapter per provider."
   },
   "role": {
-    "fr": "Seul de bout en bout : produit, architecture, front, back, tests, CI/CD et déploiement. C'est mon projet de fin d'études à l'ETNA.",
-    "en": "Solo, end to end: product, architecture, front, back, tests, CI/CD and deployment. It's my final-year project at ETNA."
+    "fr": "Seul de bout en bout : produit, architecture, front, back, tests, CI/CD et déploiement.",
+    "en": "Solo, end to end: product, architecture, front, back, tests, CI/CD and deployment."
   },
   "highlights": [
     {

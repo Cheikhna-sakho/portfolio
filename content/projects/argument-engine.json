@@ -1,0 +1,46 @@
+{
+  "slug": "argument-engine",
+  "order": 3,
+  "featured": true,
+  "context": "personal",
+  "year": "2026",
+  "title": { "fr": "Moteur d'arguments", "en": "Argument Engine" },
+  "tagline": {
+    "fr": "Un assistant de débat basé sur des LLM, qui juge la solidité d'un raisonnement sans prendre parti.",
+    "en": "An LLM-based debate assistant that judges how sound a line of reasoning is, without taking sides."
+  },
+  "problem": {
+    "fr": "Un LLM laissé libre dans un débat dérive : il prend parti, pose trois questions à la fois, oublie ce qui a été accordé plus tôt. Et sans mesure, impossible de savoir si une nouvelle version du prompt fait mieux ou pire.",
+    "en": "Left free in a debate, an LLM drifts: it takes sides, asks three questions at once and forgets what was conceded earlier. And without measurement, there is no way to tell whether a new prompt version is better or worse."
+  },
+  "solution": {
+    "fr": "Le LLM propose, le code dispose. Chaque réponse est validée par des schémas Zod, et les transitions de la conversation par des règles codées. Les prémisses accordées forment un graphe de cohérence qui détecte les contradictions. Des conversations pièges sont rejouées sur le vrai code de l'API et notées par des contrôles automatiques et un LLM juge. Chaque piège existe des deux côtés du débat, pour mesurer la neutralité.",
+    "en": "The LLM proposes, the code decides. Every response is validated by Zod schemas, and conversation transitions by coded rules. Conceded premises form a coherence graph that detects contradictions. Trap conversations are replayed against the real API code and scored by automated checks and an LLM judge. Every trap exists on both sides of the debate, to measure neutrality."
+  },
+  "role": {
+    "fr": "Projet personnel, conçu et développé seul. En cours.",
+    "en": "Personal project, designed and built alone. Ongoing."
+  },
+  "highlights": [
+    {
+      "fr": "Abstraction de fournisseur LLM avec deux implémentations : Anthropic et Azure OpenAI.",
+      "en": "LLM provider abstraction with two implementations: Anthropic and Azure OpenAI."
+    },
+    {
+      "fr": "Prompts versionnés, comparés sur la même suite d'évaluations.",
+      "en": "Versioned prompts, compared on the same eval suite."
+    },
+    {
+      "fr": "Monorepo pnpm : API NestJS, front Next.js et types partagés entre les deux.",
+      "en": "pnpm monorepo: NestJS API, Next.js front-end and types shared between them."
+    }
+  ],
+  "metrics": [
+    { "value": "2", "label": { "fr": "fournisseurs LLM", "en": "LLM providers" } },
+    { "value": "9", "label": { "fr": "scénarios d'évaluation", "en": "eval scenarios" } }
+  ],
+  "stack": ["NestJS", "Next.js", "Prisma", "PostgreSQL", "Zod", "Anthropic API", "Azure OpenAI", "Jest"],
+  "links": {
+    "note": { "fr": "Code privé, présentation possible en entretien.", "en": "Private code, happy to walk through it in an interview." }
+  }
+}

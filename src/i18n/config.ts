@@ -21,4 +21,4 @@ export function localizedPath(locale: Locale, segment?: Segment, slug?: string) 
   return `/${parts.join("/")}`;
 }
 
-export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.cheikhnasakho.fr").replace(/\/$/, "");

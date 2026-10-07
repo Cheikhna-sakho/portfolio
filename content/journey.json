@@ -1,10 +1,16 @@
 [
   {
     "id": "pickup",
-    "status": { "fr": "Pris en charge", "en": "Picked up" },
+    "status": {
+      "fr": "Pris en charge",
+      "en": "Picked up"
+    },
     "period": "2020 – 2022",
     "kind": "work",
-    "title": { "fr": "Coursier, puis premiers pas dans le web", "en": "Courier, then first steps in web" },
+    "title": {
+      "fr": "Coursier, puis premiers pas dans le web",
+      "en": "Courier, then first steps in web"
+    },
     "org": "Just Eat Takeaway.com · Team Tonic Services",
     "place": "Paris",
     "summary": {
@@ -15,10 +21,16 @@
   },
   {
     "id": "transit",
-    "status": { "fr": "En transit", "en": "In transit" },
+    "status": {
+      "fr": "En transit",
+      "en": "In transit"
+    },
     "period": "2021 – 2023",
     "kind": "education",
-    "title": { "fr": "Web@cadémie by Epitech (bac+2)", "en": "Web@cadémie by Epitech (2-year degree)" },
+    "title": {
+      "fr": "Web@cadémie by Epitech (bac+2)",
+      "en": "Web@cadémie by Epitech (2-year degree)"
+    },
     "org": "Epitech",
     "place": "Paris",
     "summary": {
@@ -29,10 +41,19 @@
   },
   {
     "id": "holis",
-    "status": { "fr": "En production", "en": "In production" },
-    "period": { "fr": "Janv. 2023 – aujourd'hui", "en": "Jan 2023 – present" },
+    "status": {
+      "fr": "En production",
+      "en": "In production"
+    },
+    "period": {
+      "fr": "Janv. 2023 – aujourd'hui",
+      "en": "Jan 2023 – present"
+    },
     "kind": "work",
-    "title": { "fr": "Développeur full-stack (alternance)", "en": "Full-stack developer (apprenticeship)" },
+    "title": {
+      "fr": "Développeur full-stack",
+      "en": "Full-stack developer"
+    },
     "org": "Holis",
     "place": "Paris",
     "summary": {
@@ -61,10 +82,16 @@
   },
   {
     "id": "etna",
-    "status": { "fr": "Contrôle qualité", "en": "Quality check" },
+    "status": {
+      "fr": "Contrôle qualité",
+      "en": "Quality check"
+    },
     "period": "2023 – 2026",
     "kind": "education",
-    "title": { "fr": "Concepteur développeur d'applications (bac+3), puis Architecte de SI (bac+5)", "en": "Application Designer-Developer (bachelor level), then Information Systems Architect (master level)" },
+    "title": {
+      "fr": "Concepteur développeur d'applications (bac+3), puis Architecte de SI (bac+5)",
+      "en": "Application Designer-Developer (bachelor level), then Information Systems Architect (master level)"
+    },
     "org": "ETNA",
     "place": "Ivry-sur-Seine",
     "summary": {
@@ -75,15 +102,24 @@
   },
   {
     "id": "next",
-    "status": { "fr": "En cours de livraison", "en": "Out for delivery" },
-    "period": { "fr": "Octobre 2026", "en": "October 2026" },
+    "status": {
+      "fr": "En cours de livraison",
+      "en": "Out for delivery"
+    },
+    "period": {
+      "fr": "Maintenant",
+      "en": "Now"
+    },
     "kind": "milestone",
-    "title": { "fr": "Prochaine étape : votre équipe", "en": "Next stop: your team" },
+    "title": {
+      "fr": "Prochaine étape : votre équipe",
+      "en": "Next stop: your team"
+    },
     "org": null,
     "place": null,
     "summary": {
-      "fr": "Disponible pour un premier CDI, en France ou à l'étranger. Backend, architecture, données et performance de préférence.",
-      "en": "Available for a first permanent role, in France or abroad. Backend, architecture, data and performance preferred."
+      "fr": "Disponible immédiatement pour un CDI, en France ou à l'étranger. Backend, architecture, données et performance de préférence.",
+      "en": "Available now for a full-time role, in France or abroad. Backend, architecture, data and performance preferred."
     },
     "points": []
   }

@@ -32,8 +32,8 @@
       "en": "Out for delivery"
     },
     "detail": {
-      "fr": "Disponible en octobre 2026 pour un CDI",
-      "en": "Available from October 2026, full-time"
+      "fr": "Disponible immédiatement pour un CDI",
+      "en": "Available now for a full-time role"
     }
   },
   "headline": {
@@ -41,8 +41,8 @@
     "en": "I design and ship software that holds up under load."
   },
   "intro": {
-    "fr": "Développeur full-stack en TypeScript, NestJS, React et PostgreSQL. Depuis plus de 3 ans en alternance sur un SaaS B2B d'éco-conception, je porte des fonctionnalités de la conception jusqu'aux tests de charge en production.",
-    "en": "Full-stack developer working in TypeScript, NestJS, React and PostgreSQL. For 3+ years as an apprentice on a B2B eco-design SaaS, I've taken features from design all the way to load tests in production."
+    "fr": "Développeur full-stack en TypeScript, NestJS, React et PostgreSQL. Près de 4 ans sur un SaaS B2B d'éco-conception, où je porte des fonctionnalités de la conception jusqu'aux tests de charge en production.",
+    "en": "Full-stack developer working in TypeScript, NestJS, React and PostgreSQL. Nearly 4 years on a B2B eco-design SaaS, taking features from design all the way to load tests in production."
   },
   "heroMetrics": [
     {

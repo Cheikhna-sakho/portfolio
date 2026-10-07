@@ -16,13 +16,13 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/projects/[
   if (!hasLocale(lang) || !project) return {};
   const description = t(project.tagline, lang);
   return {
-    title: project.title,
+    title: t(project.title, lang),
     description,
     alternates: {
       canonical: localizedPath(lang, "projects", slug),
       languages: Object.fromEntries(locales.map((l) => [l, localizedPath(l, "projects", slug)])),
     },
-    openGraph: { title: project.title, description, type: "article" },
+    openGraph: { title: t(project.title, lang), description, type: "article" },
   };
 }
 

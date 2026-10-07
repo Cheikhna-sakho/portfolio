@@ -45,7 +45,7 @@ export function Projects({ locale, dict, projects }: Props) {
                   <h3 className={styles.cardTitle}>
                     <Link href={href} className={styles.cardLink}>
                       <ViewTransition name={`project-${project.slug}`} share="project-morph" default="none">
-                        <span className={styles.titleText}>{project.title}</span>
+                        <span className={styles.titleText}>{t(project.title, locale)}</span>
                       </ViewTransition>
                     </Link>
                   </h3>
@@ -85,7 +85,7 @@ export function Projects({ locale, dict, projects }: Props) {
                   </div>
                   <h4>
                     <Link href={localizedPath(locale, "projects", project.slug)} className={styles.cardLink}>
-                      {project.title}
+                      {t(project.title, locale)}
                     </Link>
                   </h4>
                   <p>{t(project.tagline, locale)}</p>

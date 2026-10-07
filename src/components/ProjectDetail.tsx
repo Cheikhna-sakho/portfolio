@@ -37,7 +37,7 @@ export function ProjectDetail({ locale, dict, project, next }: Props) {
           <span>{project.year}</span>
         </div>
         <ViewTransition name={`project-${project.slug}`} share="project-morph" default="none">
-          <h1 className={styles.title}>{project.title}</h1>
+          <h1 className={styles.title}>{t(project.title, locale)}</h1>
         </ViewTransition>
         <p className={`fade-load ${styles.tagline}`} style={delay(1)}>
           {t(project.tagline, locale)}
@@ -109,7 +109,7 @@ export function ProjectDetail({ locale, dict, project, next }: Props) {
         <Link href={localizedPath(locale, "projects", next.slug)} className={`container ${styles.nextLink}`}>
           <span className={`mono ${styles.nextLabel}`}>{dict.projects.next}</span>
           <span className={styles.nextTitle}>
-            {next.title} <span aria-hidden="true">→</span>
+            {t(next.title, locale)} <span aria-hidden="true">→</span>
           </span>
         </Link>
       </nav>

@@ -70,7 +70,7 @@ const projectSchema = z.object({
   featured: z.boolean(),
   context: z.enum(["pro", "personal", "school"]),
   year: z.string(),
-  title: z.string(),
+  title: text,
   tagline: text,
   problem: text,
   solution: text,

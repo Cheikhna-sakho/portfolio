@@ -1,0 +1,37 @@
+{
+  "slug": "mail-sorter",
+  "order": 4,
+  "featured": false,
+  "context": "personal",
+  "year": "2026",
+  "title": { "fr": "Tri de mails", "en": "Mail Sorter" },
+  "tagline": {
+    "fr": "Une app locale qui étiquette les mails de plusieurs boîtes, par contact et par sujet.",
+    "en": "A local app that labels emails across several mailboxes, by contact and by topic."
+  },
+  "problem": {
+    "fr": "Ranger ses mails à la main ne tient pas sur plusieurs boîtes. Et un classifieur qui se trompe avec assurance fait pire que pas de tri du tout.",
+    "en": "Sorting email by hand doesn't scale across several mailboxes. And a classifier that is confidently wrong is worse than no sorting at all."
+  },
+  "solution": {
+    "fr": "Avant de coder l'app, j'ai comparé 4 approches sur de vraies boîtes : règles par expéditeur, classifieur zero-shot, LLM et vote des plus proches voisins sur embeddings. Le vote, retenu, a eu raison dans 95 à 98 % des cas au-delà de 0,9 de confiance. L'app enchaîne fil de discussion, règles par expéditeur puis historique, et apprend des validations de l'utilisateur.",
+    "en": "Before coding the app, I compared 4 approaches on real mailboxes: sender rules, a zero-shot classifier, an LLM and a nearest-neighbour vote on embeddings. The vote, which I kept, was right 95 to 98% of the time above 0.9 confidence. The app chains thread, sender rules and history, and learns from the user's validations."
+  },
+  "role": {
+    "fr": "Projet personnel, conçu et développé seul. En cours : la synchronisation IMAP est faite, le moteur de tri est en développement.",
+    "en": "Personal project, designed and built alone. Ongoing: IMAP sync is done, the sorting engine is in progress."
+  },
+  "highlights": [
+    {
+      "fr": "Lecture seule garantie par le code (IMAP readonly, BODY.PEEK) et vérifiée par des tests dédiés.",
+      "en": "Read-only access enforced in code (IMAP readonly, BODY.PEEK) and checked by dedicated tests."
+    },
+    {
+      "fr": "Secrets dans le trousseau du système, jamais en base ni dans les logs.",
+      "en": "Secrets kept in the system keyring, never in the database or the logs."
+    }
+  ],
+  "metrics": [],
+  "stack": ["Python", "FastAPI", "SQLite", "Mistral embeddings", "Next.js", "pytest"],
+  "links": {}
+}

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Cheikhna Sakho · Full-stack developer",
-    "description": "Backend-leaning full-stack developer (TypeScript, NestJS, React, PostgreSQL). 3+ years as an apprentice on a B2B eco-design SaaS. Available October 2026."
+    "description": "Backend-leaning full-stack developer (TypeScript, NestJS, React, PostgreSQL). Nearly 4 years on a B2B eco-design SaaS. Available now."
   },
   "nav": {
     "skip": "Skip to content",
@@ -63,13 +63,13 @@
   "contact": {
     "kicker": "Confirm receipt",
     "title": "Let's work together",
-    "intro": "I'm looking for a first full-time role starting October 2026. Drop me a line.",
+    "intro": "I'm looking for a full-time role and I'm available now. Drop me a line.",
     "email": "Send an email",
     "copy": "Copy address",
     "copied": "Address copied",
     "cv": "CV (PDF)",
     "phone": "Phone",
-    "marquee": "Available October 2026"
+    "marquee": "Available now"
   },
   "footer": {
     "built": "Designed and built by Cheikhna Sakho with Next.js.",
